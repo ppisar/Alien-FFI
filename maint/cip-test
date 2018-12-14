@@ -2,7 +2,7 @@
 
 set -ex
 
-perl Build.PL
+perl Makefile.PL
 cpanm --installdeps .
 ./Build
 ./Build test verbose=1
