@@ -4,5 +4,5 @@ set -ex
 
 perl Makefile.PL
 cpanm --installdeps .
-./Build
-./Build test verbose=1
+make
+make test TEST_VERBOSE=1
