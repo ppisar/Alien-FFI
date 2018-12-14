@@ -1,0 +1,8 @@
+#!/bin/bash
+
+set -ex
+
+perl Build.PL
+cpanm --installdeps .
+./Build
+./Build test verbose=1
